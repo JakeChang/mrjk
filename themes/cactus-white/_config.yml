@@ -13,7 +13,7 @@ customize:
         enabled: true
         width: 50
         height: 50
-        url: /images/logo.png
+        url: /images/JK.png
         gravatar: false
     favicon: 
       # eg. generate with http://realfavicongenerator.net/
@@ -30,7 +30,7 @@ customize:
         github: http://github.com/sergodeeva
         facebook: /
         linkedin: https://www.linkedin.com/in/natalyakosenko/
-    show_all_posts: false
+    show_all_posts: true
     post_count: 10
     highlight: pojoaque
 
@@ -40,7 +40,7 @@ rss: false
 # Plugins
 plugins:
     disqus_shortname: # Disqus Comments Shortname
-    google_analytics: UA-37473492-6 # enter the tracking ID for your Google Analytics
+    google_analytics: G-MS5XCBG1PN # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
 miscellaneous:
