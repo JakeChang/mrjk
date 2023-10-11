@@ -1,8 +1,9 @@
 nav:
   Home: /
+  Topic: /topic/
   About: /about/
-  Writing: /posts/
-  Projects: http://github.com/sergodeeva
+  #Writing: /posts/
+  #Projects: http://github.com/sergodeeva
 
 projects_url: http://github.com/sergodeeva
 
@@ -27,9 +28,9 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/sergodeeva
-        facebook: /
-        linkedin: https://www.linkedin.com/in/natalyakosenko/
+        #github: http://github.com/sergodeeva
+        #facebook: /
+        #linkedin: https://www.linkedin.com/in/natalyakosenko/
     show_all_posts: true
     post_count: 10
     highlight: pojoaque
