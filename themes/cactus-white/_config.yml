@@ -5,7 +5,7 @@ nav:
   #Writing: /posts/
   #Projects: http://github.com/sergodeeva
 
-projects_url: http://github.com/sergodeeva
+projects_url: https://mrjk.netlify.app/
 
 customize:
     gravatar:
@@ -19,13 +19,13 @@ customize:
     favicon: 
       # eg. generate with http://realfavicongenerator.net/
       desktop:
-        url: /images/favicon.ico
+        url: /images/JK.ico
         gravatar: false
       android:
-        url: /images/favicon-192x192.png
+        url: /images/JK.ico
         gravator: false
       apple:
-        url: /images/apple-touch-icon.png
+        url: /images/JK.ico
         gravator: false
     social_links:
         #github: http://github.com/sergodeeva
