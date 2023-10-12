@@ -40,8 +40,8 @@ rss: false
 
 # Plugins
 plugins:
-    disqus_shortname: # Disqus Comments Shortname
-    google_analytics: G-MS5XCBG1PN # enter the tracking ID for your Google Analytics
+    disqus_shortname: mrjk-1 # Disqus Comments Shortname
+    google_analytics: 6271886117 # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
 miscellaneous:
