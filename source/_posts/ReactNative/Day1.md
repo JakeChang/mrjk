@@ -76,11 +76,11 @@ iOS Bundling complete 3881ms
 
 成功開啟 iPhone 模擬器：
 
-![1_1](images/ReactNative/1_1.png)
+<img src="/images/ReactNative/1_1.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
 這個時候回到模擬器的桌面，會發現它會自動安裝 Expo Go 這個 App：
 
-![1_2](images/ReactNative/1_2.png)
+<img src="/images/ReactNative/1_2.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
 所以整個 ReactNative 的專案主要是使用 Expo Go 這個 App 來實現。
 
@@ -98,11 +98,11 @@ https://developer.android.com/studio/run/device.html#developer-device-options. I
 
 這個時候必須要手動開啟 Android 模擬器，打開 Android Studio 之後，選取 More Actions -> Virtual Device Manager
 
-![1_3](images/ReactNative/1_3.png)
+<img src="/images/ReactNative/1_3.png"  style="display: block;margin-left: auto;margin-right: auto;width: 100%;">
 
 在左上角，按下 Create Device，選取想要使用哪一款手機的模擬器，選好之後，在這頁按下 Play：
 
-![1_4](images/ReactNative/1_4.png)
+<img src="/images/ReactNative/1_4.png"  style="display: block;margin-left: auto;margin-right: auto;width: 100%;">
 
 重新回到終端機按下鍵盤 a 鍵，就可以自動開啟 Android 模擬器：
 
@@ -115,4 +115,8 @@ Android Bundling complete 3542ms
 
 成功開啟 Android 模擬器：
 
-![1_5](images/ReactNative/1_5.png)
+<img src="/images/ReactNative/1_5.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+
+**ReactNative 從零開始學¹ - Day1 [完]**
+
+- 下一篇：[ReactNative 從零開始學¹ - Day2 - Hello World](/ReactNative/Day2)
