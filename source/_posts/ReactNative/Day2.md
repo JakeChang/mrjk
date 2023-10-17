@@ -161,4 +161,4 @@ const styles = StyleSheet.create({
 **ReactNative 從零開始學¹ - Day2 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day1 - 建立專案](/ReactNative/Day1)
-- 下一篇：[ReactNative 從零開始學¹ - Day3 - ](/ReactNative/Day3)
+- 下一篇：[ReactNative 從零開始學¹ - Day3 - Button](/ReactNative/Day3)
