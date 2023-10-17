@@ -1,7 +1,7 @@
 ---
 title: ReactNative 從零開始學¹ - Day2 - Hello World
 date: 2023-10-16 12:09:30
-tags:
+tags: ReactNative
 ---
 
 建立好專案之後，主程式在 App.js：

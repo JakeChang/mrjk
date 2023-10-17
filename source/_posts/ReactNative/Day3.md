@@ -1,7 +1,7 @@
 ---
 title: ReactNative 從零開始學¹ - Day3 - Button
 date: 2023-10-17 19:44:32
-tags:
+tags: ReactNative
 ---
 
 接下來這個單元要來介紹按鈕，而這個按鈕按下去會將數值一直累加 1。
@@ -108,4 +108,4 @@ const styles = StyleSheet.create({
 **ReactNative 從零開始學¹ - Day3 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day2 - Hello World](/ReactNative/Day2)
-- 下一篇：[ReactNative 從零開始學¹ - Day4 - ](/ReactNative/Day4)
+- 下一篇：[ReactNative 從零開始學¹ - Day4 - ScrollView](/ReactNative/Day4)

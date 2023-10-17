@@ -1,7 +1,7 @@
 ---
 title: ReactNative 從零開始學¹ - Day1 - 建立專案
 date: 2023-10-12 12:19:00
-tags:
+tags: ReactNative
 ---
 
 ### 建立專案
