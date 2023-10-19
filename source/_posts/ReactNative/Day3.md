@@ -100,12 +100,12 @@ const styles = StyleSheet.create({
 
 <img src="/images/ReactNative/3_1.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
-[本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day3)
+[本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day3---button)
 
-<div data-snack-id="@mrjk/day3" data-snack-platform="ios" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+<div data-snack-id="@mrjk/day3---button" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.dev/embed.js"></script>
 
 **ReactNative 從零開始學¹ - Day3 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day2 - Hello World](/ReactNative/Day2)
-- 下一篇：[ReactNative 從零開始學¹ - Day4 - ScrollView](/ReactNative/Day4)
+- 下一篇：[ReactNative 從零開始學¹ - Day4 - Button](/ReactNative/Day4)

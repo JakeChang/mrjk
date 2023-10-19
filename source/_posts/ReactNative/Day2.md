@@ -153,9 +153,9 @@ const styles = StyleSheet.create({
 
 這邊就可以驗證相同的 UI 元件其所使用的樣式會繼承到子 UI 元件。
 
-[本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day2)
+[本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day2---hello-world)
 
-<div data-snack-id="@mrjk/day2" data-snack-platform="ios" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+<div data-snack-id="@mrjk/day2---hello-world" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.dev/embed.js"></script>
 
 **ReactNative 從零開始學¹ - Day2 [完]**

@@ -1,63 +1,105 @@
 ---
-title: ReactNative 從零開始學¹ - Day4 - ScrollView
+title: ReactNative 從零開始學¹ - Day4 - Button
 date: 2023-10-17 22:10:20
 tags: ReactNative
 ---
 
-如果在 Text 內有超過螢幕高度的內容時，要如何讓畫面可以滑動？
-
-先宣告 Text：
+這個單元繼續來討論 Button，一個最簡單的按鈕使用方式：
 
 ```js
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, View } from 'react-native';
 
 export default function App() {
+  const buttonTapped = () => {
+    console.log('buttonTapped');
+  };
+
   return (
     <View style={styles.container}>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque nec nibh sed mollis. Aenean finibus augue diam, at vulputate odio maximus vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultrices mollis ex finibus dignissim. Integer at varius ex, eget egestas nisi. Nunc imperdiet mi ligula, eget fringilla erat varius a. Nunc quis nibh venenatis, vestibulum elit vitae, pulvinar purus.
+      <Button title="button" onPress={buttonTapped} />
+    </View>
+  );
+}
 
-          Praesent mollis, justo in blandit interdum, elit lorem cursus tortor, sit amet ultrices nulla mauris quis libero. Integer quis mi risus. Aenean nunc quam, pretium non dictum ut, pharetra vitae nulla. Vivamus rutrum lacus eget mattis tincidunt. Nulla tincidunt sapien velit, vitae ultricies est condimentum ac. Donec ipsum nisi, pulvinar sed odio sit amet, finibus mollis orci. Integer non feugiat dolor. Aliquam tortor urna, gravida eget libero tincidunt, aliquam vulputate neque. Fusce molestie, justo sed malesuada consectetur, lectus elit mollis ligula, in elementum nisl tortor in quam. Proin pharetra arcu ut ante tincidunt efficitur. Nam dictum libero dignissim ligula faucibus, sit amet mollis tellus vehicula. Nam convallis cursus felis eu luctus. Aliquam egestas nunc tellus, id imperdiet metus volutpat eget. Vestibulum vulputate, leo nec porttitor sagittis, dui justo molestie nisi, vel faucibus elit urna id nibh. Suspendisse accumsan pharetra magna consequat dignissim.
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 24,
+  },
+});
+```
 
-          Pellentesque felis odio, rutrum id nibh ut, lacinia tempus risus. Donec ac purus maximus sem tincidunt accumsan id vel elit. Donec nec porttitor arcu. Nam eget urna quis ligula vehicula tristique non sed justo. Suspendisse potenti. Etiam vestibulum ligula et vulputate egestas. Maecenas iaculis id dui vel interdum. Aenean a dapibus diam. Vestibulum et volutpat risus, nec sollicitudin metus.
+按鈕宣告使用 `Button`，屬性 `title` 宣告按鈕名稱，`onPress` 宣告按鈕的函式。
 
-          Vestibulum id risus non ex elementum porttitor. Aliquam feugiat, mauris sit amet viverra porttitor, velit eros euismod orci, non semper turpis nulla quis nibh. Pellentesque augue purus, iaculis quis dolor id, rhoncus eleifend turpis. Vestibulum ac pulvinar ex, vel finibus justo. Curabitur eget ultricies dolor. Maecenas eget ipsum rutrum, egestas risus id, sodales dolor. Ut tincidunt ex ut nunc mollis, vestibulum scelerisque lectus porttitor. Sed laoreet dapibus nulla vitae vulputate. Vivamus magna orci, posuere at sem id, tempus dapibus magna.
+`color` 可以改變按鈕的顏色：
 
-          Vestibulum dolor turpis, pharetra id pharetra vitae, maximus et dui. Proin elementum aliquet mauris at molestie. Integer eu metus vitae lectus sodales venenatis in sit amet elit. Donec eu tortor et massa vestibulum convallis non vel erat. Pellentesque et ornare mi. Maecenas purus nisi, sollicitudin sit amet sem eget, hendrerit laoreet sapien. Donec vitae luctus erat. Integer dignissim tristique eros ac elementum.
-        </Text>
+```js
+<Button title="button" color='red' onPress={buttonTapped} />
+```
+
+`disabled` 可以使按鈕失效無法按下：
+
+```js
+<Button title="button" color='red' onPress={buttonTapped} disabled/>
+```
+
+此外，如果是非按鈕形式的 UI 元件，則必須要使用 `Pressable` 來產生按鈕的觸發狀態：
+
+```js
+import { Button, StyleSheet, View, Text, Pressable } from 'react-native';
+
+export default function App() {
+  const buttonTapped = () => {
+    console.log('buttonTapped');
+  };
+
+  return (
+    <View style={styles.container}>
+      <Pressable onl={buttonTapped}>
+        <Text>Hello World!</Text>
+      </Pressable>
+
+      <Button title="button" color='red' onPress={buttonTapped} disabled />
     </View>
   );
 }
 ```
 
-這裡放入了非常大量的文字內容，要讓滑面可以滑動，需要加入 `<ScrollView>`：
+這裡宣告了一組 `<Text>`，由於 `<Text>` 是沒有按鈕的觸發狀態，所以在外層包了一個 `Pressable` 來呼叫函式。
+
+最後，除了 `onPress` 的觸發狀態之外，還有 `onLongPress` 表示長案時觸發：
 
 ```js
-<ScrollView>
-    <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque nec nibh sed mollis. Aenean finibus augue diam, at vulputate odio maximus vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultrices mollis ex finibus dignissim. Integer at varius ex, eget egestas nisi. Nunc imperdiet mi ligula, eget fringilla erat varius a. Nunc quis nibh venenatis, vestibulum elit vitae, pulvinar purus.
-
-        Praesent mollis, justo in blandit interdum, elit lorem cursus tortor, sit amet ultrices nulla mauris quis libero. Integer quis mi risus. Aenean nunc quam, pretium non dictum ut, pharetra vitae nulla. Vivamus rutrum lacus eget mattis tincidunt. Nulla tincidunt sapien velit, vitae ultricies est condimentum ac. Donec ipsum nisi, pulvinar sed odio sit amet, finibus mollis orci. Integer non feugiat dolor. Aliquam tortor urna, gravida eget libero tincidunt, aliquam vulputate neque. Fusce molestie, justo sed malesuada consectetur, lectus elit mollis ligula, in elementum nisl tortor in quam. Proin pharetra arcu ut ante tincidunt efficitur. Nam dictum libero dignissim ligula faucibus, sit amet mollis tellus vehicula. Nam convallis cursus felis eu luctus. Aliquam egestas nunc tellus, id imperdiet metus volutpat eget. Vestibulum vulputate, leo nec porttitor sagittis, dui justo molestie nisi, vel faucibus elit urna id nibh. Suspendisse accumsan pharetra magna consequat dignissim.
-
-        Pellentesque felis odio, rutrum id nibh ut, lacinia tempus risus. Donec ac purus maximus sem tincidunt accumsan id vel elit. Donec nec porttitor arcu. Nam eget urna quis ligula vehicula tristique non sed justo. Suspendisse potenti. Etiam vestibulum ligula et vulputate egestas. Maecenas iaculis id dui vel interdum. Aenean a dapibus diam. Vestibulum et volutpat risus, nec sollicitudin metus.
-
-        Vestibulum id risus non ex elementum porttitor. Aliquam feugiat, mauris sit amet viverra porttitor, velit eros euismod orci, non semper turpis nulla quis nibh. Pellentesque augue purus, iaculis quis dolor id, rhoncus eleifend turpis. Vestibulum ac pulvinar ex, vel finibus justo. Curabitur eget ultricies dolor. Maecenas eget ipsum rutrum, egestas risus id, sodales dolor. Ut tincidunt ex ut nunc mollis, vestibulum scelerisque lectus porttitor. Sed laoreet dapibus nulla vitae vulputate. Vivamus magna orci, posuere at sem id, tempus dapibus magna.
-
-        Vestibulum dolor turpis, pharetra id pharetra vitae, maximus et dui. Proin elementum aliquet mauris at molestie. Integer eu metus vitae lectus sodales venenatis in sit amet elit. Donec eu tortor et massa vestibulum convallis non vel erat. Pellentesque et ornare mi. Maecenas purus nisi, sollicitudin sit amet sem eget, hendrerit laoreet sapien. Donec vitae luctus erat. Integer dignissim tristique eros ac elementum.
-    </Text>
-</ScrollView>
+<Pressable onLongPress={buttonTapped}>
+  <Text>Hello World!</Text>
+</Pressable>
 ```
 
-如此就可以讓畫面產生滑動的效果，呈現如：
+`onPressIn` 表示按下時觸發：
 
-<img src="/images/ReactNative/4_1.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+```js
+<Pressable onPressIn={buttonTapped}>
+  <Text>Hello World!</Text>
+</Pressable>
+```
 
-[本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day4)
+`onPressOut` 表示按下並且放開時觸發：
 
-<div data-snack-id="@mrjk/day4" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+```js
+<Pressable onPressOut={buttonTapped}>
+  <Text>Hello World!</Text>
+</Pressable>
+```
+
+<div data-snack-id="@mrjk/71eb17" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#0C0D0E;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.dev/embed.js"></script>
+
+[本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day4---button)
 
 **ReactNative 從零開始學¹ - Day4 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day3 - Button](/ReactNative/Day3)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day5 - ScrollView](/ReactNative/Day5)
