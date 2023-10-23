@@ -60,4 +60,4 @@ export default function App() {
 **ReactNative 從零開始學¹ - Day5 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day4 - Button](/ReactNative/Day4)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day6 - Modal](/ReactNative/Day6)
