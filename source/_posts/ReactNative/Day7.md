@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
 而這裡是利用一個按鈕 `Button` 按下去時，會去呼叫 `Alert.alert`，帶入一個參數為字串，表示這個警告視窗所顯示的標題內容。
 
-<img src="/images/ReactNative7_1.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+<img src="/images/ReactNative/7_1.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
 Alert 可以有多個輸入參數，例如第二個一樣輸入字串，則可以顯示 Alert 的內文：
 
@@ -46,7 +46,7 @@ Alert.alert("Hello Alert!", "Alert 要放的內容");
 
 模擬器顯示：
 
-<img src="/images/ReactNative7_2.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+<img src="/images/ReactNative/7_2.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
 Alert 的第三個參數，是輸入陣列，則可以顯示 Alert 的按鈕：
 
@@ -73,7 +73,7 @@ Alert.alert("Hello Alert!", "Alert 要放的內容", [{
 
 模擬器顯示：
 
-<img src="/images/ReactNative7_3.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+<img src="/images/ReactNative/7_3.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
 [本單元完整程式碼範例](https://snack.expo.dev/@mrjk/day7---alert)
 
