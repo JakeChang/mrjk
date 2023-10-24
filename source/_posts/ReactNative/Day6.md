@@ -188,4 +188,4 @@ export default function App() {
 **ReactNative 從零開始學¹ - Day6 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day5 - ScrollView](/ReactNative/Day5)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day7 - Alert](/ReactNative/Day7)
