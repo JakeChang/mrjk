@@ -83,4 +83,4 @@ Alert.alert("Hello Alert!", "Alert 要放的內容", [{
 **ReactNative 從零開始學¹ - Day7 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day6 - Modal](/ReactNative/Day6)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day8 - ActivityIndicator](/ReactNative/Day8)
