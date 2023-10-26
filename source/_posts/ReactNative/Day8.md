@@ -1,7 +1,7 @@
 ---
 title: ReactNative 從零開始學¹ - Day8 - ActivityIndicator
 date: 2023-10-25 12:23:41
-tags:
+tags: ReactNative
 ---
 
 這個單元要來討論讀取元件的做法，讀取元件稱為 `ActivityIndicator`。
@@ -70,4 +70,4 @@ const styles = StyleSheet.create({
 **ReactNative 從零開始學¹ - Day8 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day7 - Alert](/ReactNative/Day7)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day9 - Style Flex](/ReactNative/Day9)

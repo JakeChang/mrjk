@@ -1,7 +1,7 @@
 ---
 title: ReactNative 從零開始學¹ - Day6 - Modal
 date: 2023-10-23 12:32:55
-tags:
+tags: ReactNative
 ---
 
 這個單元要來討論 Modal 的做法，Modal 表示可以新開一個視窗，在手機上可以表示開啟第二頁。

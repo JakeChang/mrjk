@@ -1,7 +1,7 @@
 ---
 title: ReactNative 從零開始學¹ - Day7 - Alert
 date: 2023-10-24 12:17:18
-tags:
+tags: ReactNative
 ---
 
 這個單元要來討論 `Alert` 警告視窗的做法。
