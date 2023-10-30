@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-目前版面相當當純，會呈現這個樣子：
+目前版面相當單純，會呈現這個樣子：
 
 <img src="/images/ReactNative/9_0.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
@@ -129,4 +129,4 @@ const styles = StyleSheet.create({
 **ReactNative 從零開始學¹ - Day9 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day8 - ActivityIndicator](/ReactNative/Day8)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day10 - justifyContent](/ReactNative/Day10)
