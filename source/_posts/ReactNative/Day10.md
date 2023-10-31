@@ -120,4 +120,4 @@ justifyContent: 'space-evenly'
 **ReactNative 從零開始學¹ - Day10 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day9 - Style Flex](/ReactNative/Day9)
-- 下一篇：
+- 下一篇：[ReactNative 從零開始學¹ - Day11 - alignItems](/ReactNative/Day11)
