@@ -62,6 +62,41 @@ stretch 是初始的屬性，就算不設定，也是會呈現如上圖模擬器
 
 <img src="/images/ReactNative/11_4.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 
+最後一個 `baseline`，使用的情境會針對真中間的文字進行對其，將樣式修改成：
+
+```js
+import { StyleSheet, View, Text } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View style={[styles.box, { backgroundColor: 'red', paddingVertical: 60 }]}><Text>Box1</Text></View>
+      <View style={[styles.box, { backgroundColor: 'blue' }]}><Text>Box2</Text></View>
+      <View style={[styles.box, { backgroundColor: 'gray' }]}><Text>Box3</Text></View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    margin: 44,
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
+  box: {
+  }
+});
+```
+
+這裡先取消宣告 box 的 `width` 屬性，然後將 `alignItems` 設定為 `baseline`，並且多宣告 `lexDirection` 為 `row`。
+
+呈現的樣子：
+
+<img src="/images/ReactNative/11_5.png"  style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+
+也就是會針對 box 內部的文字進行對齊。
+
 **ReactNative 從零開始學¹ - Day11 [完]**
 
 - 上一篇：[ReactNative 從零開始學¹ - Day10 - justifyContent](/ReactNative/Day10)
